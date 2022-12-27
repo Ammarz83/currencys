@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <button>1</button>
+    <button>1</button>
+    <button>1</button> -->
+    <!-- <input type="text">
+    <button>prev</button>
+    <button>next</button>
+    <input id="elem" value="привет"> -->
+    <!-- <div>
+        <div class="p1">
+            <div class="rgb"></div>
+        </div>
+        <div class="s1">
+            <div class="sred"></div>
+            <div class="sorange"></div>
+            <div class="sgreen"></div>
+        </div>
+        <div class="p2">
+            <div class="rgb"></div>
+        </div>
+    </div>
+    <div>
+        <div class="w1">
+            <div class="sred"></div>
+            <div class="sorange"></div>
+            <div class="sgreen"></div>
+        </div>
+        <div class="w2">
+            <div class="sred"></div>
+            <div class="sorange"></div>
+            <div class="sgreen"></div>
+        </div>
+    </div>
+    <div>
+        <div class="p3">
+            <div class="rgb"></div>
+        </div>
+        <div class="s2">
+            <div class="sred"></div>
+            <div class="sorange"></div>
+            <div class="sgreen"></div>
+        </div>
+        <div class="p4">
+            <div class="rgb"></div>
+        </div>
+    </div> 
+<div class="users"></div>-->
+
+<div class="pageList">
+    <h1>Список валют</h1>
+
+    <div class="list">
+    
+
+    </div>
+</div>
+<div class="pageCalc hide">
+    <h1>Calculator</h1>
+    <div class="backg">
+    <div id="from">
+        <img id="fromImg" src="" alt="">
+        <select name="" id="fromSelect">
+
+        </select>
+        <div class= "formstyle">  
+
+            <form name="form1">
+        <input type="text" id='result' name="answer" class ='screen' id="fromInput">
+            </form>
+            </div>
+    </div>
+    <div id="to">
+        <img id="toImg" src="data:image/png;base64,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" alt="">
+        <select name="" id="toSelect">
+
+        </select>
+        <input itemref="fromInput" type="text">
+    </div>
+</div>
+    <div class="container">
+        <div class="keys">
+            
+
+            <input  class="button" type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+            <input class="button" type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+            <input class="button" type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+            <br> <br>  
+              
+            <input class="button" type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+            <input class="button" type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+            <input class="button" type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+            <br> <br>  
+              
+            <input class="button" type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+            <input class="button" type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+            <input class="button" type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+            <br> <br>  
+              
+              
+            <input class="button" type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+              <input class="button" type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+            <input class="button" type = "button" value = "AC" onclick = "form1.answer.value = ' ' " id= "clear" >  
+            <br>  
+        </form>
+        </div>
+    </div> 
+
+    
+</div>
+
+
+
+<div class="tabBar">
+    <button id="listBtn">
+        <img class="lBtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAACNjY1TU1MwMDC8vLzDw8Ofn59eXl5OTk7Ozs5aWlqHh4fw8PDS0tLg4OCwsLBubm5jY2MfHx/m5uZ4eHipqan5+fnAwMDY2NgXFxdDQ0M8PDyTk5NsbGwpKSkRERF+fn4iIiI3NzdXtxDgAAAER0lEQVR4nO3d6WKiMBSGYcBR3HEFl7rN3P89TgUrtiRADifkFL/nb0fMOypCQPA8AAAAAAAAAAAAAACAjkt2t+Ofuo63XeJ6wIaSk2/q9Ksax1fjQN+/jl0Pu74Foe9u4XrgdfWJgb7fdz30ejaP4V6mi349i+nl8ZiN68HX0qO85R5v7J6lMbGap0O9mr4am2zlNLcyJl5L4kiz/5mlhRExSw73gW4Jj9zeH3iQ/62YrWf2hEfuf8m6ZpCOk/JKJOkjB+wj4pYWrkmFa1mF42A4URgeGxYe1YsN2t6k23+Ubps0KNT6oHy2yXalY7FT6Ps79g6tqGIotHV+9j1TJmIv0Tk6Kjyyl2g8XsLtVCFYNSxcBarFbtt9EbOtZM0H39L3YbY50NYOZFD2jqFvmZRvDaWfjICwWIq0ULefk70SIWGxYemr3xNT6I3uf72av02TdPdppPuzoMLsUzo0Xuqw/JMmqNDLVnsTs1cxmWQP0/4DSYVfE1GnaFZX9DW9qp+KklTonau+ubXO+oWKKsxWNgTa1YwnrfAxV2OqdI5GWKG3M5/Wv5bvOkgr/FzfrIz6VlXT3fIKP23m43rmNTbyRBayQiErFFqBQlYotAKFrFBohdPCaFHEfiDFZWGo3JQu2ZklcViYaPYWmA8VOSzcaAqZD3WikJWqcP3ibycLZ6//oJOF3/bSUUghu3A8oNm9HBGVXJhUHhTXy4/SSS6M6YEvazDJhUGTwuf7VHLhoEHg+rlMyYVeSDlzP3XMVzWiC1mgkNV7Fu72uaiThUUoNIRCVj9moi7qwlnJEghcFkb/FH1r7hN63c4IK84BYn9SzHmzQqEVKGSFQitQyAqFVqCQFQqtcFoYLwvOIfdvsl0Wqk8G/mB+UoH7+MxXR3BYqPtBKQoNOS9cbnO3ThZ+W3V2srB4LgYKDYku3JwCopffW0ounGlWtnXkP/aSXKg+O7Om51E7yYXml9/7bYX7BoH5by4lF3rz85Bomn/Nii5kgUJW71kYxrlFJwuLUGgIhax+zESpT5C9Mj+py8JkOyo6cx/Jx4wwKxRagUJWKLQChaxQaAUKWaHQChSy+lE4WynuHNPjvlysy0LVad4+7TK0JbCPzwqF3Sx8vaXMoJOF3Z/zRmFjogsHE8V0Yy3bfLGSC5scA87PcJRc2Og4voQrDtg9F0PCVSOqz6chX3DA92/PZUou9GZxSPTyM03RhSxQyOo9zy8drnLnThYWodCQwN9bdOfKkJobIZTdyYHC6Xxp/1a4A9Ut5n5SzAizQqEVKGSFQitQyAqFVqCQFQqtQCErFFqBQlYotAKFrFBoRfuF3LOFVUZtFma3AuC/RGmZ7LIF7HOUGtmpB4e43574kD4n8zy6nubKwdZd2gr0xo4K2W91ptfo9AqysHpgfPrV42FXdU9kZkncU5zdbU8v5r7EHQAAAAAAAAAAAAAAQNv+AwwWUbs7mLAHAAAAAElFTkSuQmCC" alt="">
+    </button>
+    <button id="calc">
+        <img class="cCalc" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAB8fHxpaWm8vLwwMDDMzMw6Ojq1tbWEhIR4eHivr6/s7Ozb29vHx8erq6uPj48SEhKYmJhcXFwMDAxWVlZBQUHX19ejo6P5+flzc3Py8vLl5eXa2tpHR0fDw8MiIiJOTk4bGxudnZ0qKiqJiYltbW0RERFiYmI1NTXw0aidAAAIAUlEQVR4nO2d6XqrOAyGIfsCSUqahaxN2tM293+DEyy825xnZmz5zFTvr5IqMZ/BmyRMlhEEQRAEQRAEQRAEQRAEQRAEQfzH2VWbxxCLx6baIeubD3NshnNEfacxur6G8QlL4CKJvoYFjsBRMoF5PsIQWPDSDvsBFvsDL7RAUHiDoqoaoSxJXUGxt/hFtY0Qu/N+Dk9QcPymuMFrDwbQ/jexi4FWOI1djJMpSkucWKWUq1uMXhNa3apUSoLanURWyBr8RR6f4slrRSrD/KX5oIqskHXbB3G4jKyvYekrPA79ppAeP6oQBCpXrdcc9TEVTlAEyqaHrvDYnkB/PorDvN+WcEykEHrve8wZ/+nOymhHJ2yFNSv8K+7srf5ipUAh2Aph/hZ7FqWWgq1w1fz5Grm8LHttilmxP7EVsmYYe3RqB0FoiNgKZ0ofEBFWkTP2JykMAikMDykMDSkMDykMDSkMDykMDSkMDykMDSkMDykMDSkMDykMDSkMDykMDSkMDykMzY9SyIr+jFxeln3KisRWCEH8yOVlGSsFQvnYCiFHKXZ6C+QKQA4WepSblR05R6nNhIQDdIUsRJq/xsxxG7H4aBsgxVdYQ/H5pZrEobpAAa91IoVo6dA8VwBfYTZHESiS9BMozK4IAq+itBQKs+Mssr7ZURaWROFT47y/Hcdh258f1aISKUSEFAaBFEaFFAbBUngs9azXnXMmXp+M5Fh3Uqplpad2plBY8ixehbH1oGDRe7GsPqyc+3r1Zlndp+pwkUChJ5N9q41ivnTwe6lZtcsICyWBFV/hL/c5PU9eleifvKoSd16rhLO2jkmp8nTSyW91l1a130qusdEV3jvOSt5bmw6rd2HlvR1yJUs3jZ9mq7emZ3/BPl7zY3BDvJiOALh1h+IYtJhOnyu0TX7PJ8nzzu1UfeZlfOFHA2ZVWlbwPBEfNEp2NLCsoBZ59WArZOXNbBPoM3jjeW8OPmyrWlMO3gJHeWwA4cPPn+LzLjWFbEDZOn6JWfFHUZlCV94/ey6eP9tFCoNACjNSKCCFACkMDynMSKGAFAKkMDzmzNvhdtvZCh+OX2JW5/bAO/P+aD5PNfNeec6KaeJBzXb1ZDvg4HO+eoJasaPJ4CBIFT+Eel8fDQtY24qdcuAch6b3EL78Jo5z7abllOB9S7UCbs8qf31RaT+Ui9lt+4nLaiWseh1W35oRpsKOCLDStfidaKqD4NhhJa4/vjfx8/cnlXVtD6K2u4HXSu5tksAj7AkAG75en0R9swLfNiJSYBKv/sK1+97K9E6dXR7Fg9lFnVy3xLd6N6SJzJwWc42JcxewYmRYjVzbadSjiWGl1wJF14JACqOSRuFuuddYDswepOE01632E1cgtZiYVvpUKIXCyYej/5uZGhdbh9XanMiVrh73onZcCRSuHefUoPenU4+VHofZe6yUWDG+Qn/gTB3yfQL1SIx/5zcpEV2hr9ZzddHQmaIpb+eOOKq8I9LshJW/bjTaSY7MVmj3VNat2tRY6SFo5zM3zerWfjWVQpgrH8zJCVwzsbUiXJyb2fmcWQBZhrnhypudTwFdFO93sRWywPSLbcJuXrHGnxi3IwcqQl/j2xM+qB+eq5DET+PwRJ21ev8bfhqXJ4rd4+RrCwopzEihgBQCpDA8pDAjhQJSCJDC8Pwohaw8xx60/zw30eElZousVBFSCEfY6yK2La5YVV21ayV51+oBrrv9NiBQniq/FK7VfVFonCBaI86jDZsNDCuoHrmqAqv9STdr43f82qL7abre+TTSv+FBxpW6dugXrj10hR0vDVJOo/BbjZUf7kiLFw0B35v47junh9pn+GOfqlum9FrJ2+HPedJ5o3eKHn/iQ3fsn1zu8+cQonRSKbz6hcPde7uaX6or+4kf++mobGk37Le9apAo9lSUKmfPmxKOulXpft9A/fyPamUMRRRdCwIpjEoShcXyc63xvXLsdVJPDobV1OqOngx6utW6N9HaawKFdS93MDRnoc4Jy5f5lJN76HlXLPAVFr6JyFL7zsVjpa+8fAlWyqOM+PvT2M/tctTrc/NarRQr592Q65LQFfpPSl1Udb3WS4aKu16MKaoLW2G7LrqtNNq3TcrQNExnxr80q97duDw3dvw21aymMMkRE3RshdAz7E0LaJxi5QerSGt8qSH2ybtKWPHb7zaExsnnSUl2pBvbJnpMFG5S26rUzn2kHUlq7Tb9X3qiHs0/yNcWFFKYkUIBKQRIYXhIYUYKBaQQIIXh+VEK2dpibZvAOoGvLVgupiNHE1aXpfM7CuzzVG883mtXQcLcMm/8CM7dduEfNE2+l9K/a/WArbBNza70TeQmW+NkwWq60KwGkOUvnjSF533z/lWzukI1iExidD9N1x5XcjHbtceVdJp2veJbOBTRFXbk1ytetNof+/xWftjnclRD4SgKtVfUezds087CWxFb1aF99MXMvwp34bFgnb9IxD+7PabGloiF+/oYm2jV7oC/muV/cfx4cKC9yGodfFtXZmV3+qODeasOp7bb6Tw1w8BvMzUIAh1u7I38fd06BlOjdiMBHWjMvfR9wMhq+1RD06YdOJ/2jUr7XH/st9VnItBSuSPxsajbCN3t96b/GpEBdNgPsNgfeKHRW2FDV5goNkjtH+ulDzYIjRA4uXZSiM/Yk6sThXlXXmIchvYKLC67avMYYvHYVPjDE0EQBEEQBEEQBEEQBEEQBEEQRGD+AvLsmrD5CGgvAAAAAElFTkSuQmCC" alt="">
+    </button>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

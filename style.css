@@ -1,0 +1,142 @@
+/* body > div{
+    display: flex;
+    justify-content: space-between;
+}
+.red, .orange, .green, .rgb, .sred, .sgreen, .sorange{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.sred{
+    background-color: white;
+}
+.sgreen{
+    background-color: greenyellow;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.green{
+    background-color: greenyellow;
+}
+.s1, .s2, .w1, .w2, .p1, .p2, .p3, .p4{
+    padding: 10px;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+}
+.rgb{
+    background-color: yellow;
+}
+.p2, .p3, .p4{
+    margin-top: 20px;
+} */
+body{
+    background-color: lightblue;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.valute{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.valute p + p{
+    color: gray;
+    width: 50%;
+}
+.valute img + p{
+    width: 20%;
+    font-size: 1.7em;
+}
+.list{
+    height: 85%;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 5%;
+    padding: 10px;
+}
+.pageList > h1{
+    height: 10%;
+    text-align: center;
+    padding: 10px;
+}
+.pageList, .pageCalc{
+    height: 90vh;
+}
+.tabBar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tabBar button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 192, 74);
+}
+/* .pageCalc{
+    background-color: aqua;
+} */
+.hide{
+    display: none;
+}
+.valute img{
+    width: 40px;
+}
+
+.lBtn, .cCalc{
+    width: 40px;
+    height: 40px;
+}
+      
+    
+#from, #to{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+
+.button{
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+}
+.clear{
+    width: 126px;
+    height: 40px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    right: -100px;
+    top: 100px;
+    margin: 5px;
+    
+}
+.screen{
+    width: 173px;
+    height: 19px;
+    position: relative;
+    
+}
+.backg {
+    background-color: white;
+    border-radius: 20px;
+}
+
